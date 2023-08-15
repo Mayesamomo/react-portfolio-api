@@ -9,6 +9,8 @@ use Symfony\Component\HttpFoundation\Response;
 
 class ProjectController extends Controller
 {
+
+    //get all controller 
    public function index()
    {
     $projects = Project::with('user')->get(); 
